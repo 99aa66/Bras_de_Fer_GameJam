@@ -8,4 +8,8 @@ public class ButtonManager : MonoBehaviour
     public void StartLevel() {
         SceneManager.LoadScene("SampleScene");
     }
+
+    public void QuitGame() {
+        Application.Quit();
+    }
 }
