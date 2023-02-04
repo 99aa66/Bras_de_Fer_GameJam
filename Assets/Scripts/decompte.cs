@@ -9,6 +9,7 @@ public class decompte : MonoBehaviour
     [SerializeField] private GameObject Bouton1;
     [SerializeField] private GameObject Bouton2;
     [SerializeField] private GameObject Bouton_Ret;
+    [SerializeField] private GameObject Timer;
     [SerializeField] private GameObject Texte1;
     [SerializeField] private GameObject Texte2;
 
@@ -25,6 +26,7 @@ public class decompte : MonoBehaviour
         Debug.Log("GOOOOOO");
         Bouton1.SetActive(true);
         Bouton2.SetActive(true);
+        Timer.SetActive(true);
         //GOOOOOO
     }
 
@@ -36,6 +38,7 @@ public class decompte : MonoBehaviour
         Bouton_Ret.SetActive(false);
         Texte1.SetActive(false);
         Texte2.SetActive(false);
+        Timer.SetActive(false);
         StartCoroutine(Wait(1F));
     }
 
