@@ -8,7 +8,7 @@ using static System.Net.Mime.MediaTypeNames;
 public class Timer : MonoBehaviour
 
 {
-    [SerializeField] private float timeValue = 9;
+    public float timeValue = 9;
     [SerializeField] private GameObject timeText;
     [SerializeField] private GameObject Button1;
     [SerializeField] private GameObject Button2;

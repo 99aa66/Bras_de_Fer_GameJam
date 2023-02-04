@@ -258,6 +258,8 @@ MonoBehaviour:
   Button_Retour: {fileID: 2094753276}
   Texte1: {fileID: 145133755}
   Texte2: {fileID: 422208382}
+  Timer: {fileID: 1561458384}
+  Tim: {fileID: 1561458388}
 --- !u!114 &13676014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,6 +1100,8 @@ MonoBehaviour:
   Button_Retour: {fileID: 2094753276}
   Texte1: {fileID: 145133755}
   Texte2: {fileID: 422208382}
+  Timer: {fileID: 1561458384}
+  Tim: {fileID: 1561458388}
 --- !u!1 &572052087
 GameObject:
   m_ObjectHideFlags: 0
