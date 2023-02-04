@@ -2666,7 +2666,7 @@ PrefabInstance:
       objectReference: {fileID: 519420031}
     - target: {fileID: 5824599992332266220, guid: 21cc16108b68339458a3546b726507d9, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: Fond_Anim
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21cc16108b68339458a3546b726507d9, type: 3}
