@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
-    public void StartLevel() {
+    public void StartLevel() 
+    {
         SceneManager.LoadScene("SampleScene");
     }
 
-    public void QuitGame() {
+    public void QuitGame() 
+    {
         Application.Quit();
+    }
+
+    public void Return()
+    {
+        SceneManager.LoadScene("title screen");
     }
 }

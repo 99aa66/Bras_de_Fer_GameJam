@@ -12,6 +12,7 @@ public class Bouton_Droite_Code : MonoBehaviour
     [SerializeField] private Score Scr;
     [SerializeField] private GameObject Button1;
     [SerializeField] private GameObject Button2;
+    [SerializeField] private GameObject Button_Retour;
     [SerializeField] private GameObject Texte1;
     [SerializeField] private GameObject Texte2;
     private string Texte;
@@ -28,11 +29,15 @@ public class Bouton_Droite_Code : MonoBehaviour
             Debug.Log("Player 2 Win"); 
             Button1.SetActive(false);
             Button2.SetActive(false);
+            Button_Retour.SetActive(true);
+
             Texte1.SetActive(true);
             Texte2.SetActive(true);
 
             Texte1.GetComponent<TextMeshProUGUI>().text = " DEFEAT ";
             Texte2.GetComponent<TextMeshProUGUI>().text = " WIN ";
+
+            
 
         }
     }
@@ -47,13 +52,18 @@ public class Bouton_Droite_Code : MonoBehaviour
             Debug.Log("Player 1 Win");
             Button1.SetActive(false);
             Button2.SetActive(false);
+            Button_Retour.SetActive(true);
+
             Texte1.SetActive(true);
             Texte2.SetActive(true);
 
             Texte1.GetComponent<TextMeshProUGUI>().text = " WIN ";
             Texte2.GetComponent<TextMeshProUGUI>().text = " DEFEAT ";
 
+            
+
         }
     }
+   
 
 }

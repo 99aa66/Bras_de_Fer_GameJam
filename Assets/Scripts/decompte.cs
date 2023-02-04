@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class decompte : MonoBehaviour
 {
 
-    [SerializeField] private GameObject Button1;
-    [SerializeField] private GameObject Button2;
+    [SerializeField] private GameObject Bouton1;
+    [SerializeField] private GameObject Bouton2;
+    [SerializeField] private GameObject Bouton_Ret;
     [SerializeField] private GameObject Texte1;
     [SerializeField] private GameObject Texte2;
 
@@ -22,16 +23,17 @@ public class decompte : MonoBehaviour
         //3
         yield return new WaitForSeconds(WaitTime);
         Debug.Log("GOOOOOO");
-        Button1.SetActive(true);
-        Button2.SetActive(true);
+        Bouton1.SetActive(true);
+        Bouton2.SetActive(true);
         //GOOOOOO
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        Button1.SetActive(false);
-        Button2.SetActive(false);
+        Bouton1.SetActive(false);
+        Bouton2.SetActive(false);
+        Bouton_Ret.SetActive(false);
         Texte1.SetActive(false);
         Texte2.SetActive(false);
         StartCoroutine(Wait(1F));
