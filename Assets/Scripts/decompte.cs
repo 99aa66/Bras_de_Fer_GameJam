@@ -13,26 +13,44 @@ public class decompte : MonoBehaviour
     [SerializeField] private GameObject Texte1;
     [SerializeField] private GameObject Texte2;
 
+
+    [SerializeField] private GameObject Chrono1;
+    [SerializeField] private GameObject Chrono2;
+    [SerializeField] private GameObject Chrono3;
+    [SerializeField] private GameObject Chrono4;
     private IEnumerator Wait(float WaitTime) {
         Debug.Log("3");
+
+        Chrono1.SetActive(true);
         //1
         yield return new WaitForSeconds(WaitTime);
         Debug.Log("2");
+        Chrono1.SetActive(false);
+        Chrono2.SetActive(true);
         //2
         yield return new WaitForSeconds(WaitTime);
         Debug.Log("1");
+        Chrono2.SetActive(false);
+        Chrono3.SetActive(true);
         //3
         yield return new WaitForSeconds(WaitTime);
+        Chrono3.SetActive(false);
+        Chrono4.SetActive(true);
         Debug.Log("GOOOOOO");
+
         Bouton1.SetActive(true);
         Bouton2.SetActive(true);
         Timer.SetActive(true);
+
+        yield return new WaitForSeconds(WaitTime);
+        Chrono4.SetActive(false);
         //GOOOOOO
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        Chrono1.SetActive(true);
         Bouton1.SetActive(false);
         Bouton2.SetActive(false);
         Bouton_Ret.SetActive(false);
