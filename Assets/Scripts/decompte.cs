@@ -8,6 +8,8 @@ public class decompte : MonoBehaviour
 
     [SerializeField] private GameObject Button1;
     [SerializeField] private GameObject Button2;
+    [SerializeField] private GameObject Texte1;
+    [SerializeField] private GameObject Texte2;
 
     private IEnumerator Wait(float WaitTime) {
         Debug.Log("3");
@@ -30,6 +32,8 @@ public class decompte : MonoBehaviour
     {
         Button1.SetActive(false);
         Button2.SetActive(false);
+        Texte1.SetActive(false);
+        Texte2.SetActive(false);
         StartCoroutine(Wait(1F));
     }
 
