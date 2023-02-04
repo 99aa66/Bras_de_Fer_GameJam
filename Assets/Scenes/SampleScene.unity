@@ -176,6 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7274b0c27785a82439a34ce2e9ece33b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Scr: {fileID: 1696865046}
 --- !u!114 &13676014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,13 +221,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: 7274b0c27785a82439a34ce2e9ece33b, type: 3}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 13676013}
+        m_TargetAssemblyTypeName: Bouton_Droite_Code, Assembly-CSharp
+        m_MethodName: ClickDroite
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -501,6 +502,7 @@ GameObject:
   - component: {fileID: 542479401}
   - component: {fileID: 542479400}
   - component: {fileID: 542479399}
+  - component: {fileID: 542479402}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -572,7 +574,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 542479400}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 542479402}
+        m_TargetAssemblyTypeName: Bouton_Droite_Code, Assembly-CSharp
+        m_MethodName: ClickGauche
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &542479400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,6 +625,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542479397}
   m_CullTransparentMesh: 1
+--- !u!114 &542479402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542479397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7274b0c27785a82439a34ce2e9ece33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scr: {fileID: 1696865046}
 --- !u!1 &1038212619
 GameObject:
   m_ObjectHideFlags: 0
@@ -640,6 +667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87795e1b20e893349b2512ad429e0e24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Button1: {fileID: 542479397}
+  Button2: {fileID: 13676011}
 --- !u!4 &1038212621
 Transform:
   m_ObjectHideFlags: 0
@@ -722,6 +751,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1696865045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1696865047}
+  - component: {fileID: 1696865046}
+  m_Layer: 0
+  m_Name: Score
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1696865046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696865045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c91e56ec3e5714caf53620615cb5cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+--- !u!4 &1696865047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696865045}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.89678, y: 253.16603, z: -11.226006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1781380514
 GameObject:

@@ -4,25 +4,35 @@ using UnityEngine;
 
 public class Bouton_Droite_Code : MonoBehaviour
 {
-    private int Score2 = 0;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    private int WinScore = 20;
+    private int WinScore2 = -20;
+    public Score Scr;
 
-    }
 
     // Update is called once per frame
     public void ClickDroite()
     {
-        
-        Score2 += 1;
-        Debug.Log("BEH");
 
-        if (Score2 > 3)
+        Scr.score++;
+
+
+        if (Scr.score >= WinScore)
         {
-            Debug.Log("Perdu");
+            Debug.Log("Player 1 Win");
         }
     }
-}
+    public void ClickGauche()
+    {
 
+        Scr.score--;
+
+
+        if (Scr.score <= WinScore2)
+        {
+            Debug.Log("Player2 Win");
+
+        }
+    }
+
+}
