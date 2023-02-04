@@ -49,6 +49,7 @@ public class Bouton_Droite_Code : MonoBehaviour
             Button2.SetActive(false);
             Texte1.SetActive(true);
             Texte2.SetActive(true);
+
             Texte1.GetComponent<TextMeshProUGUI>().text = " WIN ";
             Texte2.GetComponent<TextMeshProUGUI>().text = " DEFEAT ";
 
