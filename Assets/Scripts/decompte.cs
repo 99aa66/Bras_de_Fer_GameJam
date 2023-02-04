@@ -51,6 +51,10 @@ public class decompte : MonoBehaviour
     void Start()
     {
         Chrono1.SetActive(true);
+        Chrono2.SetActive(false);
+        Chrono3.SetActive(false);
+        Chrono4.SetActive(false);
+
         Bouton1.SetActive(false);
         Bouton2.SetActive(false);
         Bouton_Ret.SetActive(false);
