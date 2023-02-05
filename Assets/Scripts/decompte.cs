@@ -12,6 +12,9 @@ public class decompte : MonoBehaviour
     [SerializeField] private GameObject Timer;
     [SerializeField] private GameObject Texte1;
     [SerializeField] private GameObject Texte2;
+    [SerializeField] private GameObject Bulle_carotte;
+    [SerializeField] private GameObject Bulle_citrouille;
+
 
 
     [SerializeField] private GameObject Chrono1;
@@ -32,6 +35,8 @@ public class decompte : MonoBehaviour
         Debug.Log("1");
         Chrono2.SetActive(false);
         Chrono3.SetActive(true);
+        Bulle_carotte.SetActive(false);
+        Bulle_citrouille.SetActive(false);
         //3
         yield return new WaitForSeconds(WaitTime);
         Chrono3.SetActive(false);
@@ -54,6 +59,8 @@ public class decompte : MonoBehaviour
         Chrono2.SetActive(false);
         Chrono3.SetActive(false);
         Chrono4.SetActive(false);
+        Bulle_carotte.SetActive(true);
+        Bulle_citrouille.SetActive(true);
 
         Bouton1.SetActive(false);
         Bouton2.SetActive(false);
