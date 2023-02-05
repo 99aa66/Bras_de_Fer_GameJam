@@ -48,10 +48,10 @@ public class Timer : MonoBehaviour
             timeToDisplay = 0;
         }
 
-        float minutes = Mathf.FloorToInt(timeToDisplay / 60);
+        
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
 
-        timeText.GetComponent<TextMeshProUGUI>().text = string.Format("{0:00}", seconds);
+        timeText.GetComponent<TextMeshProUGUI>().text = string.Format("{0:0}", seconds);
     }
 }
