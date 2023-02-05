@@ -15,7 +15,7 @@ public class Bouton_Droite_Code : MonoBehaviour
     [SerializeField] private GameObject Button_Retour;
     [SerializeField] private GameObject Texte1;
     [SerializeField] private GameObject Texte2;
-
+    [SerializeField] private GameObject Audio;
     [SerializeField] private GameObject Timer;
     private string Texte;
 
@@ -41,7 +41,8 @@ public class Bouton_Droite_Code : MonoBehaviour
 
             Texte1.GetComponent<TextMeshProUGUI>().text = " DEFEAT ";
             Texte2.GetComponent<TextMeshProUGUI>().text = " WIN ";
-            
+            Destroy(Audio);
+
         }
     }
     public void ClickGauche()
@@ -63,7 +64,7 @@ public class Bouton_Droite_Code : MonoBehaviour
 
             Texte1.GetComponent<TextMeshProUGUI>().text = " WIN ";
             Texte2.GetComponent<TextMeshProUGUI>().text = " DEFEAT ";
-
+            Destroy(Audio);
         }
         
     }
@@ -80,6 +81,7 @@ public class Bouton_Droite_Code : MonoBehaviour
 
             Texte1.GetComponent<TextMeshProUGUI>().text = " DRAW ";
             Texte2.GetComponent<TextMeshProUGUI>().text = " DRAW ";
+            Destroy(Audio);
 
         }
     }
