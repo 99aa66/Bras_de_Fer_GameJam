@@ -8,13 +8,14 @@ public class decompte : MonoBehaviour
 
     [SerializeField] private GameObject Bouton1;
     [SerializeField] private GameObject Bouton2;
-    [SerializeField] private GameObject Bouton_Ret;
+    [SerializeField] private GameObject Bouton_Ret1;
+    [SerializeField] private GameObject Bouton_Ret2;
     [SerializeField] private GameObject Timer;
     [SerializeField] private GameObject Texte1;
     [SerializeField] private GameObject Texte2;
     [SerializeField] private GameObject Bulle_carotte;
     [SerializeField] private GameObject Bulle_citrouille;
-
+    [SerializeField] private GameObject Anim_Fond;
     [SerializeField] private GameObject Aide;
     
 
@@ -22,6 +23,20 @@ public class decompte : MonoBehaviour
     [SerializeField] private GameObject Chrono2;
     [SerializeField] private GameObject Chrono3;
     [SerializeField] private GameObject Chrono4;
+
+
+    [SerializeField] private GameObject DominG;
+    [SerializeField] private GameObject DominD;
+    [SerializeField] private GameObject Egal;
+
+    [SerializeField] private GameObject FinG;
+    [SerializeField] private GameObject FinD;
+
+    [SerializeField] private GameObject Sifflet;
+
+
+
+
     private IEnumerator Wait(float WaitTime) {
         Debug.Log("3");
 
@@ -48,9 +63,11 @@ public class decompte : MonoBehaviour
         Bouton2.SetActive(true);
         Timer.SetActive(true);
         Aide.SetActive(false);
+        Anim_Fond.SetActive(false);
 
         yield return new WaitForSeconds(WaitTime);
         Chrono4.SetActive(false);
+        
         //GOOOOOO
 
     }
@@ -68,11 +85,22 @@ public class decompte : MonoBehaviour
         Aide.SetActive(true);
         Bouton1.SetActive(false);
         Bouton2.SetActive(false);
-        Bouton_Ret.SetActive(false);
+        Bouton_Ret1.SetActive(false);
+        Bouton_Ret2.SetActive(false);
         Texte1.SetActive(false);
         Texte2.SetActive(false);
         Timer.SetActive(false);
         StartCoroutine(Wait(1F));
+
+        DominG.SetActive(false);
+        DominD.SetActive(false);
+        Egal.SetActive(false);
+
+        FinD.SetActive(false);
+        FinG.SetActive(false);
+
+        Sifflet.SetActive(false);
+
     }
 
     // Update is called once per frame

@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class ButtonManager : MonoBehaviour
 {
+    [SerializeField] public retur retur;
+
     public void StartLevel() 
     {
         SceneManager.LoadScene("SampleScene");
@@ -14,9 +16,27 @@ public class ButtonManager : MonoBehaviour
     {
         Application.Quit();
     }
-
-    public void Return()
+    public void Update()
     {
-        SceneManager.LoadScene("title screen");
+        if (retur.check_P1 && retur.check_P2)
+        {
+            SceneManager.LoadScene("title screen");
+        }
     }
+    public void ReturnP1()
+    {
+        retur.check_P1 = true;
+        
+        Destroy(gameObject);
+
+    }
+    public void ReturnP2()
+    {
+        retur.check_P2 = true;
+        
+        Destroy(gameObject);
+        
+
+    }
+
 }
