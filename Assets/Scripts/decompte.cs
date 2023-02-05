@@ -16,7 +16,7 @@ public class decompte : MonoBehaviour
     [SerializeField] private GameObject Bulle_citrouille;
 
     [SerializeField] private GameObject Aide;
-    [SerializeField] private GameObject Audio;
+    
 
     [SerializeField] private GameObject Chrono1;
     [SerializeField] private GameObject Chrono2;
