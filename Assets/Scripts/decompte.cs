@@ -15,6 +15,8 @@ public class decompte : MonoBehaviour
     [SerializeField] private GameObject Bulle_carotte;
     [SerializeField] private GameObject Bulle_citrouille;
 
+    [SerializeField] private GameObject Aide;
+
 
 
     [SerializeField] private GameObject Chrono1;
@@ -46,10 +48,12 @@ public class decompte : MonoBehaviour
         Bouton1.SetActive(true);
         Bouton2.SetActive(true);
         Timer.SetActive(true);
+        Aide.SetActive(false);
 
         yield return new WaitForSeconds(WaitTime);
         Chrono4.SetActive(false);
         //GOOOOOO
+
     }
 
     // Start is called before the first frame update
@@ -62,6 +66,7 @@ public class decompte : MonoBehaviour
         Bulle_carotte.SetActive(true);
         Bulle_citrouille.SetActive(true);
 
+        Aide.SetActive(true);
         Bouton1.SetActive(false);
         Bouton2.SetActive(false);
         Bouton_Ret.SetActive(false);
